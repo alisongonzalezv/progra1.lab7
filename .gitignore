@@ -1,0 +1,12 @@
+# Archivos de sistema macOS
+.DS_Store
+
+# Carpetas de compilación y CLion
+cmake-build-debug/
+cmake-build-release/
+.idea/
+*.user
+
+# Ejecutables creados
+*.o
+*.app
