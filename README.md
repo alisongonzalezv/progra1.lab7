@@ -4,7 +4,14 @@
 - **Curso:** Programación 1
 - **Laboratorio:** 7 - Sistema de Gestión de Contactos
 
-## Pruebas de funcionamiento
-- **Ruta del archivo de persistencia:** `~/Lab7Datos/contactos.txt`
-- **Comprobación de Edición:** Se seleccionó una fila de la tabla `QTableWidget`, se abrieron los diálogos emergentes `QInputDialog` para cambiar los datos del contacto y se reescribió el archivo mediante `QFile::Truncate`.
-- **Comprobación de Eliminación:** Se seleccionó un contacto, se confirmó la acción mediante un `QMessageBox::question` y se removió la línea correspondiente del archivo de texto.
+## Evidencia de funcionamiento
+
+### Captura 1: Confirmación de Guardado
+![Guardado de contacto](captura1.png)
+
+### Captura 2: Historial, Edición y Eliminación
+![Historial de contactos](captura2.png)
+
+## Detalles técnicos
+- **Ruta de persistencia:** `~/Lab7Datos/contactos.txt`
+- **Edición/Eliminación:** Implementadas mediante cuadros de diálogo (`QInputDialog` / `QMessageBox`) y actualización limpia del archivo `.txt`.
